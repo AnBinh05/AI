@@ -6,6 +6,7 @@
 
 from  dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
+from langchain_ollama import ChatOllama
 from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
@@ -131,8 +132,12 @@ summary_prompt_temple =PromptTemplate(
 input_variables=["information"], template=summary_template
 )
 # Dùng Gemini thay cho OpenAI/Ollama
-llm = ChatGoogleGenerativeAI(
-    model="gemini-1.5-flash",  # hoặc gemini-1.5-pro
+#llm = ChatGoogleGenerativeAI(
+    #model="gemini-1.5-flash",  # hoặc gemini-1.5-pro
+  # temperature=0
+#)
+llm = ChatOllama(
+    model="gemma3:270m",
     temperature=0
 )
 
