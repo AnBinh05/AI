@@ -5,6 +5,7 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 from  dotenv import load_dotenv
+from graph.graph import app
 #from langchain_core.prompts import PromptTemplate
 #from langchain_ollama import ChatOllama
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -15,7 +16,8 @@ load_dotenv()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print('PyCharm')
+    print("Hello Advanced RAG")
+    print(app.invoke(input={"question": "what is agent memory?"}))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 #def main():

@@ -8,4 +8,3 @@ def retrieve (state: GraphState) ->Dict[str, Any]:
     return {"documents": documents, "question": question}
 
 
-tri
