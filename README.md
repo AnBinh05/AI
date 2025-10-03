@@ -10,7 +10,6 @@
 * **Generation Node**: Sử dụng LLM để tổng hợp toàn bộ thông tin và sinh ra câu trả lời cuối cùng cho người dùng.
 
 ---
-Ok, mình viết lại gọn gàng để bạn có thể đưa thẳng lên README nhé 👇
 
 ---
 
@@ -80,6 +79,7 @@ Nếu chưa đủ → quay lại bước **Retrieve**, bổ sung thêm dữ li�
 * **Self-RAG** = vừa nấu vừa nếm → thấy nhạt thì đi mua thêm muối trước khi mang ra bàn.
 
 ---
+
 
 
 
